@@ -13,40 +13,25 @@
     <div class="container">
         <h1>Todo app</h1>
         <div class="search">
-            <input type="text" name="Search" placeholder="Search...">
+            <input type="text" id="filter" placeholder="Search...">
         </div>
     </div>
 
     <div class="items">
          <h1>Add Items</h1>
-         <form>
-          <input type="item">   
+         <form id="addForm" class="form-inline">
+          <input type="text" id="item">   
           <input type="submit" value="Submit">
+        </form>
           
            <h1>Items</h1>
-           <ul class="items-list">
-          <input type="text" name="Item" placeholder="Item 1"><i class="fa-solid fa-square-xmark"></i>
-          <input type="text" name="Item" placeholder="Item 2"><i class="fa-solid fa-square-xmark"></i>
-          <input type="text" name="Item" placeholder="Item 3"><i class="fa-solid fa-square-xmark"></i>
-          <input type="text" name="Item" placeholder="Item 4"><i class="fa-solid fa-square-xmark"></i>
+           <ul id="items" class="items-list">
+            <li class="list-group-item">item1<button class="fa-solid fa-square-xmark"></button>
+            <li class="list-group-item">item2<button class="fa-solid fa-square-xmark"></button>
+            <li class="list-group-item">item3<button class="fa-solid fa-square-xmark"></button>
+            <li class="list-group-item">item4<button class="fa-solid fa-square-xmark"></button>
            </ul>
-          
-          
-         </form>
-         
-
     </div>
-
-
-
-
-
-
-    <script src="main.js"></script>
-    
-    
-
-
-    
+    <script src="main.js"></script>  
 </body>
 </html>
