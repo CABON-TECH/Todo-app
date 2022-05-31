@@ -45,7 +45,6 @@ function addItem(e) {
 //removing item
 function removeItem(e) {
     if(e.target.classlist.contains('delete')) {
-        console.log(1);
         if(confirm('Delete forever')) {
             var li = e.target.parentElement;
             itemList.removeChild(li);
