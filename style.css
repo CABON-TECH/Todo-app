@@ -16,10 +16,6 @@
     width: 50%;  
 }
 
-.items{
-    display: flex;
-}
-
 
 input[type=submit] {
     background-color: black;
@@ -60,9 +56,11 @@ right: 50px;
 .list-group-item{
    border: 1px solid grey;
    height: 4vh;
+   
 }
 
 .fa-solid{
     position: relative;
-    left: 790px;
+    left: 780px;
+    
 }
