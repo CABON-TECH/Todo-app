@@ -1,0 +1,1 @@
+This project entails a To-do-List whereby a user can input the tasks they want to do, check the tasks done and also clear all tasks when all of them are completed. It is efficient for a user who want to manage their time and keep track of their day.
