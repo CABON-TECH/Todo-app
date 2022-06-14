@@ -31,7 +31,7 @@ function addItem(e) {
    //adding classes to  deleteBtn
    deleteBtn.className = 'fa-solid fa-square-xmark delete';
    //appending the textnode
-   deleteBtn.appendChild(document.createTextNode('X'));
+   deleteBtn.appendChild(document.createTextNode(''));
 
    //appending the button to the li
   li.appendChild(deleteBtn);
@@ -44,8 +44,8 @@ function addItem(e) {
 
 //removing item
 function removeItem(e) {
-    if(e.target.classlist.contains('delete')) {
-        if(confirm('Delete forever')) {
+    if(e.target.classList.contains("delete")) {
+        if(confirm("Are you sure to delete?")) {
             var li = e.target.parentElement;
             itemList.removeChild(li);
         }

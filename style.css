@@ -35,7 +35,7 @@ input[type=submit] {
 
 
 input[type=text] {
-    display: flexbox;
+    display: flex;
     width: 95%;
     position: relative;
 }
@@ -51,16 +51,23 @@ input[type=text] {
 .items-list{
 position: relative;
 right: 50px;
+
 }
 
 .list-group-item{
    border: 1px solid grey;
-   height: 4vh;
+   display: grid;
+   margin: 15px;
+
    
 }
 
 .fa-solid{
     position: relative;
-    left: 780px;
+    align-items: flex-end;
+    left: 850px;
+    bottom: 15px;
+    display: flex;
+    width: 25px;
     
 }
