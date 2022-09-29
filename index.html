@@ -12,24 +12,21 @@
 <body>
     <div class="container">
         <h1>Todo app</h1>
-        <div class="search">
-            <input type="text" id="filter" placeholder="Search...">
-        </div>
+        <input type="text" id="filter" class="search" placeholder="Search...">
     </div>
-
     <div class="items">
-         <h1>Add Items</h1>
-         <form id="addForm" class="form-inline">
-          <input type="text" id="item">   
-          <input type="submit" value="Submit">
+        <h1>Add Items</h1>
+        <form id="addForm" class="form-inline">
+            <input type="text" id="item">   
+            <input type="submit" value="Submit">
         </form>
-           <h1>Items</h1>
-           <ul id="items" class="items-list">
+        <h1>Items</h1>
+        <ul id="items" class="items-list">
             <li class="list-group-item">item1<button class="fa-solid fa-square-xmark delete"></button></li>
             <li class="list-group-item">item2<button class="fa-solid fa-square-xmark delete"></button></li>
             <li class="list-group-item">item3<button class="fa-solid fa-square-xmark delete"></button></li>
             <li class="list-group-item">item4<button class="fa-solid fa-square-xmark delete"></button></li>
-           </ul>
+        </ul>
     </div >
     </div>
     <script src="main.js"></script>  
