@@ -46,13 +46,12 @@ input[type=text] {
     border-radius: 50px;
 }
 
-.fa-solid {
-    color: red;
-    margin-left: 400px;
+.uis-times-circle {
+    justify-content: flex-end;
     padding: 10px;
     background-color: bisque;
 }
-.fa-solid:hover{
+.uis-times-circle:hover{
     background-color: gray;
 }
 .items-list{
@@ -62,6 +61,8 @@ width: 500px;
 }
 
 .list-group-item{
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid grey;
