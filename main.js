@@ -1,6 +1,7 @@
 var form = document.getElementById('addForm');
 var itemList = document.getElementById('items');
 var filter = document.getElementById('filter');
+let deleteMe = document.querySelectorAll('ul');
 //form subimt event
 form.addEventListener('submit', addItem);
 
@@ -9,9 +10,9 @@ itemList.addEventListener('click', removeItem);
 
 //filter event
 filter.addEventListener('keyup', filterItems);
-
 //add item function
 function addItem(e) {
+<<<<<<< HEAD
    e.preventDefault();
    
    //new input value
@@ -39,9 +40,30 @@ function addItem(e) {
    //appending li to list
    itemList.appendChild(li);
 
+=======
+e.preventDefault();
+>>>>>>> 9e36d47df7c6b6961f8f96078e8510ebd947167c
 
+//new input value
+var newItem = document.getElementById('item').value;
+//creating new list elements
+var li = document.createElement('li');
+//adding the class
+li.className = 'list-group-item';
+//adding a text node with the input value
+li.appendChild(document.createTextNode(newItem));
+//creating the delete button element
+    var deleteBtn = document.createElement('i');
+//adding classes to  deleteBtn
+    deleteBtn.className = 'uis uis-times-circle';
+    li.appendChild(deleteBtn)
+//appending the button to the li
+    li.appendChild(deleteBtn);
+    //appending li to list
+    itemList.appendChild(li);
 }
 
+<<<<<<< HEAD
 //removing item
 function removeItem(e) {
     if(e.target.classList.contains("delete")) {
@@ -49,13 +71,18 @@ function removeItem(e) {
             var li = e.target.parentElement;
             itemList.removeChild(li);
         }
+=======
+function removeItem(e){
+    if (e.target.className == "uis uis-times-circle"){
+        console.log("data");
+        let ul = document.getElementById('items');
+        let li =document.querySelector('li');
+        ul.removeChild(li)
+>>>>>>> 9e36d47df7c6b6961f8f96078e8510ebd947167c
     }
-
 }
-
 //filter items
 function filterItems(e) {
-
     //changing character to lowercase
     var text = e.target.value.toLowerCase();
 
@@ -72,6 +99,6 @@ function filterItems(e) {
         }
     })
 
-   
+
     
 }
