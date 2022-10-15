@@ -12,7 +12,6 @@ itemList.addEventListener('click', removeItem);
 filter.addEventListener('keyup', filterItems);
 //add item function
 function addItem(e) {
-<<<<<<< HEAD
    e.preventDefault();
    
    //new input value
@@ -40,9 +39,7 @@ function addItem(e) {
    //appending li to list
    itemList.appendChild(li);
 
-=======
 e.preventDefault();
->>>>>>> 9e36d47df7c6b6961f8f96078e8510ebd947167c
 
 //new input value
 var newItem = document.getElementById('item').value;
@@ -63,7 +60,6 @@ li.appendChild(document.createTextNode(newItem));
     itemList.appendChild(li);
 }
 
-<<<<<<< HEAD
 //removing item
 function removeItem(e) {
     if(e.target.classList.contains("delete")) {
@@ -71,16 +67,14 @@ function removeItem(e) {
             var li = e.target.parentElement;
             itemList.removeChild(li);
         }
-=======
-function removeItem(e){
-    if (e.target.className == "uis uis-times-circle"){
-        console.log("data");
-        let ul = document.getElementById('items');
-        let li =document.querySelector('li');
-        ul.removeChild(li)
->>>>>>> 9e36d47df7c6b6961f8f96078e8510ebd947167c
+//function removeItem(e){
+    //if (e.target.className == "uis uis-times-circle"){
+        //console.log("data");
+        //let ul = document.getElementById('items');
+        //let li =document.querySelector('li');
+        //ul.removeChild(li)
     }
-}
+//}
 //filter items
 function filterItems(e) {
     //changing character to lowercase
