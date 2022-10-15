@@ -74,7 +74,7 @@ function removeItem(e) {
         //let li =document.querySelector('li');
         //ul.removeChild(li)
     }
-//}
+}
 //filter items
 function filterItems(e) {
     //changing character to lowercase
