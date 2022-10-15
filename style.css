@@ -3,40 +3,36 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
 .container{
     background-color: aqua;
     color: black;
-    width: 700px;
+    width: 900px;
     margin-top: 50px;
     margin-left: 50px;
     padding: 10px;
+    border-radius: 25px
 }
 
 .search{
     padding: 10px;
     margin: 8px;
-<<<<<<< HEAD
     box-sizing: border-box;
-    left: 400px;
+    left: 500px;
     width: 50%; 
-    
-    
-=======
     border: 1px solid;
     border-radius: 5px;
->>>>>>> 9e36d47df7c6b6961f8f96078e8510ebd947167c
+    bottom: 20px;;
 }
 
 
 input[type=submit] {
     background-color: black;
-<<<<<<< HEAD
-    color: red;
-=======
+
     color: white;
     margin-top: 5px;
     padding: 10px;
->>>>>>> 9e36d47df7c6b6961f8f96078e8510ebd947167c
     position: relative;
     border-radius: 5px;
 }
@@ -53,36 +49,23 @@ input[type=submit] {
 
 
 input[type=text] {
-<<<<<<< HEAD
     display: flex;
     width: 95%;
     position: relative;
-=======
     padding: 8px;
     width: 300px;
     border: 1px solid;
     border-radius: 50px;
->>>>>>> 9e36d47df7c6b6961f8f96078e8510ebd947167c
 }
 
-.uis-times-circle {
-    justify-content: flex-end;
-    padding: 10px;
-    background-color: bisque;
-}
-.uis-times-circle:hover{
-    background-color: gray;
-}
+
 .items-list{
-<<<<<<< HEAD
 position: relative;
-right: 50px;
-
 }
 
 .list-group-item{
    border: 1px solid grey;
-   display: grid;
+   display: flex;
    margin: 15px;
    border-radius: 5px;
 
@@ -92,16 +75,15 @@ right: 50px;
 .fa-solid{
     position: relative;
     align-items: flex-end;
-    left: 850px;
-    bottom: 15px;
+    left: 5px;
+    bottom: 5px;
     display: flex;
     width: 25px;
     
+    
 }
 #item {
-    border-radius: 25px;
-}
-=======
+border-radius: 25px;
 margin: 15px;
 list-style-type: none;
 width: 500px;
@@ -113,5 +95,5 @@ width: 500px;
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid grey;
+    
 }
->>>>>>> 9e36d47df7c6b6961f8f96078e8510ebd947167c
